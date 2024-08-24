@@ -1,0 +1,10 @@
+// Github: https://github.com/alchemyplatform/alchemy-sdk-js
+import { Network, Alchemy } from "alchemy-sdk";
+
+const settings = {
+  apiKey: "q21976o343Nu8HoNMmb7UmwZgeXgLGRV",
+  network: Network.ETH_MAINNET,
+};
+const alchemy = new Alchemy(settings);
+
+alchemy.core.getBlockNumber("finalized").then(console.log);
